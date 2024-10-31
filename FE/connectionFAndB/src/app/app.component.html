@@ -1,0 +1,6 @@
+<form [formGroup]="employeeForm" (ngSubmit)="onSubmit()">
+  <input formControlName="name" placeholder="Name" required>
+  <input formControlName="age" placeholder="Age" required>
+  <button type="submit">Create Employee</button>
+</form>
+<button (click)="getEmployees()">GET Employees</button>
